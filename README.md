@@ -1,6 +1,8 @@
 StockWise AI: An Intelligent Inventory Management Agent
 StockWise AI is an advanced, AI-powered inventory management assistant built with LangChain, Google's Gemini Pro model, and a Gradio user interface. It leverages a modern Retrieval-Augmented Generation (RAG) architecture to answer natural language queries about inventory by interacting with a real-time SQLite database.
 
+![homepage](public/image.png)
+
 The assistant is fortified with robust security guardrails to prevent prompt injection and other malicious misuse, an intelligent caching layer to ensure high performance, and integrated observability for deep insights into the agent's behavior.
 
 Core Features
@@ -53,7 +55,7 @@ Getting Started
 Follow these steps to set up and run the project locally.
 
 1. Prerequisites
-Python 3.9+
+   Python 3.9+
 
 Access to Google AI Studio for a GOOGLE_API_KEY
 
@@ -62,52 +64,52 @@ An Opik account for an OPIK_API_KEY
 A Gmail account with an App Password for sending email alerts.
 
 2. Installation
-Clone the repository:
+   Clone the repository:
 
 git clone <your-repository-url>
 cd <your-repository-folder>
 
-
 Create and activate a Python virtual environment:
 
 # For Windows
+
 python -m venv myenv
 myenv\Scripts\activate
 
 # For macOS/Linux
+
 python3 -m venv myenv
 source myenv/bin/activate
-
 
 Install the dependencies:
 
 pip install -r requirements.txt
 
-
 3. Configuration
-Create a file named .env in the root of the project.
+   Create a file named .env in the root of the project.
 
 Copy the contents of .env.example (if provided) or add the following variables, replacing the placeholder values with your actual credentials:
 
 # Google API Key for Gemini
+
 GOOGLE_API_KEY="YOUR_GOOGLE_API_KEY_HERE"
 
 # Opik Tracing API Key
+
 OPIK_API_KEY="YOUR_OPIK_API_KEY_HERE"
 
 # Email Configuration (for Gmail)
+
 EMAIL_HOST="smtp.gmail.com"
 EMAIL_PORT=587
 EMAIL_USER="your-email@gmail.com"
 EMAIL_PASS="your-16-character-app-password"
 EMAIL_TO="recipient-email@example.com"
 
-
 4. Running the Application
-Execute the main script from your terminal:
+   Execute the main script from your terminal:
 
 python inventory_planner_final.py
-
 
 Open your web browser and navigate to the local URL provided in the terminal (usually http://127.0.0.1:7860).
 
