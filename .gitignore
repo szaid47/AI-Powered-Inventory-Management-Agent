@@ -1,0 +1,28 @@
+Environment variables
+crucial for keeping secrets out of version control
+.env
+
+Python virtual environment
+replace 'myenv' with the actual name of your venv folder if different
+myenv/
+venv/
+pycache/
+*.pyc
+
+Database file
+prevents committing the local database with its data
+*.db
+inventory.db
+
+IDE and editor configuration files
+.vscode/
+.idea/
+
+Operating System generated files
+.DS_Store
+Thumbs.db
+
+Build artifacts
+build/
+dist/
+*.egg-info/
